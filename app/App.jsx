@@ -7,16 +7,30 @@ import path from 'path'
 class App extends Component {
   constructor() {
     super();
+    this.srcArray = [['imgs/blue-1.jpg','imgs/blue-2.jpg', 
+      'imgs/blue-3.jpg', 'imgs/blue-4.jpg'],
+      ['imgs/02.jpg', 'imgs/10.jpg', 'imgs/11.jpg', 'imgs/12.jpg'],
+      ['imgs/13.jpg', 'imgs/green-1.JPG','imgs/05.jpg', 'imgs/08.jpg']]
+
     this.state = {
-      birdSrcs: ['imgs/blue-1.jpg','imgs/blue-2.jpg', 
-      'imgs/blue-3.jpg', 'imgs/blue-4.jpg']
+      current: this.srcArray[0]
     }
+
+    this.triggerRed = function () {
+     return this.setState({current: this.srcArray[1]})
+    }.bind(this)
+
+    this.triggerYellow = function () {
+      return this.setState({current: this.srcArray[2]})
+    }.bind(this)
+
   }
   render () {
-    console.log('rendering bird')
     return (
     <div>
-     <Gallery imageSrc={this.state.birdSrcs} />
+     <button id='reds' onClick={this.triggerRed}>Reds</button>
+     <button id='yellows' onClick={this.triggerYellow}>Yellows</button>
+     <Gallery imageSrc={this.state.current} />
     </div>
     )
   }

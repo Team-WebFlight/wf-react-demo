@@ -7,7 +7,6 @@ class Gallery extends Component {
     for (let i = 0; i < this.props.imageSrc.length; i++) {
       images.push(<Webflight imgSrc={this.props.imageSrc[i]} key={i} />)
     } 
-    console.log('images is ', images)
     return (
       <div>
        { images }
