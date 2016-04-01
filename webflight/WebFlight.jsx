@@ -2,12 +2,12 @@ import React, { Component } from 'react'
 import path from 'path'
 
 class WebFlight extends Component {
-  // NOTE / Question: this.wfSrc?
+
   constructor () {
     super()
     this.replaceSrc = function (src) {
-      if (wfTorrent[path.basename(src)]) {
-        this.wfSrc = wfTorrent[path.basename(src)]
+      if (wfGlobal[path.basename(src)]) {
+        this.wfSrc = wfGlobal[path.basename(src)]
         console.log('SUCCESSFUL RESET')
       } else {
         this.wfSrc = src
@@ -29,7 +29,7 @@ class WebFlight extends Component {
   render () {
     return (
     <div>
-      <img {...this.props} src={this.wfSrc} />
+      <img {...this.props} src={this.props.imgSrc} />
     </div>
     )
   }
