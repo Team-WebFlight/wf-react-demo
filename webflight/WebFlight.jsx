@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import path from 'path'
 
 class WebFlight extends Component {
-
   constructor () {
     super()
     this.replaceSrc = function (src) {
@@ -17,19 +16,20 @@ class WebFlight extends Component {
   }
 
   componentWillReceiveProps (nextProps) {
-    this.replaceSrc(nextProps.src)
+    this.replaceSrc(nextProps.source)
   }
 
   componentWillMount () {
     // NOTE: Standard error: 'src' is missing in props validation for WebFlight
 
-    this.replaceSrc(this.props.src)
+    this.replaceSrc(this.props.source)
   }
 
   render () {
+    console.log('this.props', this.props)
     return (
     <div>
-      <img {...this.props} src={this.props.imgSrc} />
+      <img src={this.props.source} className={this.props.c} />
     </div>
     )
   }

@@ -1,12 +1,11 @@
 import React, { Component } from 'react';
-import Webflight from '../../webflight/WebFlight.jsx'
+import WebFlight from '../../webflight/WebFlight.jsx'
 
 class Gallery extends Component {
   render() {
-    var images = [];
-    for (let i = 0; i < this.props.imageSrc.length; i++) {
-      images.push(<Webflight imgSrc={this.props.imageSrc[i]} key={i} />)
-    } 
+    let _class = 'thumbnails'
+    let images = this.props.source.map((img, i) => 
+      <WebFlight source={img} key={i} c={"thumbnails"} />)
     return (
       <div>
        { images }

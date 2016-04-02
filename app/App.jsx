@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import Gallery from './components/Gallery.jsx'
-
+import WebFlight from '../webflight/WebFlight.jsx'
 import path from 'path'
 
 class App extends Component {
@@ -13,7 +13,8 @@ class App extends Component {
       ['imgs/13.jpg', 'imgs/green-1.JPG','imgs/05.jpg', 'imgs/08.jpg']]
 
     this.state = {
-      current: this.srcArray[0]
+      current: this.srcArray[0],
+      display: this.srcArray[2][0]
     }
 
     this.triggerRed = function () {
@@ -28,9 +29,11 @@ class App extends Component {
   render () {
     return (
     <div>
-     <button id='reds' onClick={this.triggerRed}>Reds</button>
-     <button id='yellows' onClick={this.triggerYellow}>Yellows</button>
-     <Gallery imageSrc={this.state.current} />
+      <div>
+        <button id='reds' onClick={this.triggerRed}>Reds</button>
+        <button id='yellows' onClick={this.triggerYellow}>Yellows</button>
+      </div>
+      <Gallery source={this.state.current} />
     </div>
     )
   }
