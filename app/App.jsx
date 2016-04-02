@@ -25,6 +25,11 @@ class App extends Component {
       return this.setState({current: this.srcArray[2]})
     }.bind(this)
 
+    this.updateDisplay = function (element) {
+      let clickedSrc = `imgs/${path.basename(element.target.src)}`
+      return this.setState({display: clickedSrc})
+    }.bind(this)
+
   }
   render () {
     return (
@@ -33,7 +38,9 @@ class App extends Component {
         <button id='reds' onClick={this.triggerRed}>Reds</button>
         <button id='yellows' onClick={this.triggerYellow}>Yellows</button>
       </div>
-      <Gallery source={this.state.current} />
+      <WebFlight source={this.state.display} cls={"display"}/>
+      <Gallery source={this.state.current}
+               handle={this.updateDisplay} cls={"thumbnails"}/>
     </div>
     )
   }

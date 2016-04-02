@@ -13,6 +13,7 @@ class WebFlight extends Component {
         console.log('UNSUCCESSFUL')
       }
     }
+    this.handle = (e) => { console.log('clicked', e.target.src) }
   }
 
   componentWillReceiveProps (nextProps) {
@@ -20,16 +21,15 @@ class WebFlight extends Component {
   }
 
   componentWillMount () {
-    // NOTE: Standard error: 'src' is missing in props validation for WebFlight
-
     this.replaceSrc(this.props.source)
   }
 
   render () {
-    console.log('this.props', this.props)
+    let newDisplay = this.props.source
     return (
     <div>
-      <img src={this.props.source} className={this.props.c} />
+      <img src={this.props.source} className={this.props.cls} 
+        onClick={this.props.handle} />
     </div>
     )
   }
