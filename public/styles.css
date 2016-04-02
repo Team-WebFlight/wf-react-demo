@@ -9,18 +9,18 @@ html, body {
   color: #282c37;
 }
 
-/*.navbar {*/
-/*  height: 80px;*/
-/*  width: 100%;*/
-/*  background: #d9e1e8;*/
-/*}*/
+.navbar {
+  height: 80px;
+  width: 100%;
+  background: #d9e1e8;
+}
 
-/*.nav-links {*/
-/*  word-spacing: 20px;*/
-/*  margin-top: 25px;*/
-/*  margin-right: 80px;*/
-/*  float: right;*/
-/*}*/
+.nav-links {
+  word-spacing: 20px;
+  margin-top: 25px;
+  margin-right: 80px;
+  float: right;
+}
 
 #title {
   color: #728BAC;
@@ -29,16 +29,16 @@ html, body {
   margin-bottom: 15px;
 }
 
-/*.footer {*/
-/*  position: absolute;*/
-/*  bottom: 0;*/
-/*  left: 0;*/
-/*  height: 50px;*/
-/*  width: 100%;*/
-/*  border-top: 2px solid #728BAC;*/
-/*  font-weight: 300;*/
-/*  background-color: aliceblue;*/
-/*}*/
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 50px;
+  width: 100%;
+  border-top: 2px solid #728BAC;
+  font-weight: 300;
+  background-color: aliceblue;
+}
 
 /*.footer-left {*/
 /*  [> float: left; <]*/
