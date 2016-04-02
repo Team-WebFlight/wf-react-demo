@@ -7,13 +7,10 @@ class WebFlight extends Component {
     this.replaceSrc = function (src) {
       if (wfGlobal[path.basename(src)]) {
         this.wfSrc = wfGlobal[path.basename(src)]
-        console.log('SUCCESSFUL RESET')
       } else {
         this.wfSrc = src
-        console.log('UNSUCCESSFUL')
       }
     }
-    this.handle = (e) => { console.log('clicked', e.target.src) }
   }
 
   componentWillReceiveProps (nextProps) {
