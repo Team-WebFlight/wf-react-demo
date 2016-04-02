@@ -9,189 +9,200 @@ html, body {
   color: #282c37;
 }
 
-.navbar {
-  height: 80px;
-  width: 100%;
-  background: #d9e1e8;
-}
+/*.navbar {*/
+/*  height: 80px;*/
+/*  width: 100%;*/
+/*  background: #d9e1e8;*/
+/*}*/
 
-.nav-links {
-  word-spacing: 20px;
-  margin-top: 25px;
-  margin-right: 80px;
-  float: right;
-}
+/*.nav-links {*/
+/*  word-spacing: 20px;*/
+/*  margin-top: 25px;*/
+/*  margin-right: 80px;*/
+/*  float: right;*/
+/*}*/
 
 #title {
   color: #728BAC;
-  margin: 15px 0px 0px 80px;
   font-weight: 300;
-  float: left;
   font-size: 30px;
+  margin-bottom: 15px;
 }
 
-.footer {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  height: 50px;
-  width: 100%;
-  border-top: 2px solid #728BAC;
-  font-weight: 300;
-  background-color: aliceblue;
-}
+/*.footer {*/
+/*  position: absolute;*/
+/*  bottom: 0;*/
+/*  left: 0;*/
+/*  height: 50px;*/
+/*  width: 100%;*/
+/*  border-top: 2px solid #728BAC;*/
+/*  font-weight: 300;*/
+/*  background-color: aliceblue;*/
+/*}*/
 
-.footer-left {
-  /* float: left; */
-  word-spacing: 20px;
-  margin-left: 80px;
-  float: left;
-}
+/*.footer-left {*/
+/*  [> float: left; <]*/
+/*  word-spacing: 20px;*/
+/*  margin-left: 80px;*/
+/*  float: left;*/
+/*}*/
 
-.footer-right {margin-left: 890px;/* float: right; */}
+/*.footer-right {margin-left: 890px;[> float: right; <]}*/
 
-a {
-  text-decoration: none;
-  color: #728BAC;
-  font-weight: 700;
-}
+/*a {*/
+/*  text-decoration: none;*/
+/*  color: #728BAC;*/
+/*  font-weight: 700;*/
+/*}*/
 
-#webflight {
-  font-size: 60px;
-  font-weight: 700;
-  margin: 60px 0px 0px 80px;
-}
+/*#webflight {*/
+/*  font-size: 60px;*/
+/*  font-weight: 700;*/
+/*  margin: 60px 0px 0px 80px;*/
+/*}*/
 
-#tagline {
-  font-size: 30px;
-  font-weight: 300;
-  margin-left: 80px;
-}
+/*#tagline {*/
+/*  font-size: 30px;*/
+/*  font-weight: 300;*/
+/*  margin-left: 80px;*/
+/*}*/
 
-.code {
-  background-color: #EEF1F3;
-  padding: 15px 0px 0px 20px;
-  width: 400px;
-}
+/*.code {*/
+/*  background-color: #EEF1F3;*/
+/*  padding: 15px 0px 0px 20px;*/
+/*  width: 400px;*/
+/*}*/
 
-#code1 {
-  margin-left: 40px;
-  height: 30px;
-  /*width: 400px;*/
-  padding: 10px 0px 10px 20px;
-}
+/*#code1 {*/
+/*  margin-left: 40px;*/
+/*  height: 30px;*/
+/*  [>width: 400px;<]*/
+/*  padding: 10px 0px 10px 20px;*/
+/*}*/
 
-#code2 {
-  margin: 0px 0px 60px 40px;
-  height: 130px;
-}
+/*#code2 {*/
+/*  margin: 0px 0px 60px 40px;*/
+/*  height: 130px;*/
+/*}*/
 
-#code-block {
-  margin: -120px 0px 0px 850px;
-  border: 1px dashed gray;
-  width: 500px;
-  position: absolute;
-}
+/*#code-block {*/
+/*  margin: -120px 0px 0px 850px;*/
+/*  border: 1px dashed gray;*/
+/*  width: 500px;*/
+/*  position: absolute;*/
+/*}*/
 
-.instructions {
-  font-weight: 700;
-  font-size: 20px;
-  margin: 50px 0px 20px 40px;
-}
+/*.instructions {*/
+/*  font-weight: 700;*/
+/*  font-size: 20px;*/
+/*  margin: 50px 0px 20px 40px;*/
+/*}*/
 
-#star-icon {
-  margin: 12px 0px 0px 20px;
-  width: 100px;
-  float: left;
-}
+/*#star-icon {*/
+/*  margin: 12px 0px 0px 20px;*/
+/*  width: 100px;*/
+/*  float: left;*/
+/*}*/
 
-#beta {
-  font-size: 20px;
-  font-weight:700;
-  color: #E87D7D;
-}
+/*#beta {*/
+/*  font-size: 20px;*/
+/*  font-weight:700;*/
+/*  color: #E87D7D;*/
+/*}*/
 
-#loader {
-  margin: 90px 0px 0px 293px;
-  position: absolute;
-}
+/*#loader {*/
+/*  margin: 90px 0px 0px 293px;*/
+/*  position: absolute;*/
+/*}*/
 
-#browser img {
-  height: 180px;
-  position: absolute;
-  margin: 100px 0px 0px 80px;
-}
+/*#browser img {*/
+/*  height: 180px;*/
+/*  position: absolute;*/
+/*  margin: 100px 0px 0px 80px;*/
+/*}*/
 
-#browser2 img {
-  height: 180px;
-  position: absolute;
-  margin: 100px 0px 0px 520px;
-}
+/*#browser2 img {*/
+/*  height: 180px;*/
+/*  position: absolute;*/
+/*  margin: 100px 0px 0px 520px;*/
+/*}*/
 
-#intro {
-  margin: 10px 0px 0px 80px;
-  width: 700px;
-}
+/*#intro {*/
+/*  margin: 10px 0px 0px 80px;*/
+/*  width: 700px;*/
+/*}*/
 
-.form {
-  width: 500px;
-  height: 200px;
-  background: #d9e1e8;
-  padding: 40px;
-  border-radius: 20px;
-}
+/*.form {*/
+/*  width: 500px;*/
+/*  height: 200px;*/
+/*  background: #d9e1e8;*/
+/*  padding: 40px;*/
+/*  border-radius: 20px;*/
+/*}*/
 
-.form textarea {
-  height: 200px;
-  width: 315px;
-  resize: none;
-  border: none;
-}
+/*.form textarea {*/
+/*  height: 200px;*/
+/*  width: 315px;*/
+/*  resize: none;*/
+/*  border: none;*/
+/*}*/
 button {
   height: 30px;
   width: 70px;
+  margin-bottom: 10px;
   border-radius: 3px;
   background-color: #728BAC;
   border: none;
   color:white;
 }
 
-input[type="submit"], input[type="button"] {
-  height: 30px;
-  width: 70px;
-  border-radius: 3px;
-  background-color: #728BAC;
-  border: none;
-  color:white;
-  margin: 20px 0px 0px 240px;
-}
+/*input[type="submit"], input[type="button"] {*/
+/*  height: 30px;*/
+/*  width: 70px;*/
+/*  border-radius: 3px;*/
+/*  background-color: #728BAC;*/
+/*  border: none;*/
+/*  color:white;*/
+/*  margin: 20px 0px 0px 240px;*/
+/*}*/
 
-input[type="button"] {
-  height: 30px;
-  width: 70px;
-  border-radius: 3px;
-  background-color: #728BAC;
-  border: none;
-  color:white;
-  margin: 20px 0px 0px -150px;
-  position: absolute;
-}
+/*input[type="button"] {*/
+/*  height: 30px;*/
+/*  width: 70px;*/
+/*  border-radius: 3px;*/
+/*  background-color: #728BAC;*/
+/*  border: none;*/
+/*  color:white;*/
+/*  margin: 20px 0px 0px -150px;*/
+/*  position: absolute;*/
+/*}*/
 
-.ui-dialog-titlebar {
-  display: none;
-}
+/*.ui-dialog-titlebar {*/
+/*  display: none;*/
+/*}*/
 
-input[type="text"] {
-  width: 315px;
-  height: 25px;
-  border: none;
-}
+/*input[type="text"] {*/
+/*  width: 315px;*/
+/*  height: 25px;*/
+/*  border: none;*/
+/*}*/
 
-.ui-dialog-titlebar-close {
-  visibility: hidden;
-}
+/*.ui-dialog-titlebar-close {*/
+/*  visibility: hidden;*/
+/*}*/
 
-.words {
-  margin-top: 10px;
+/*.words {*/
+/*  margin-top: 10px;*/
+/*  margin-bottom: 5px;*/
+/*}*/
+
+.thumbnails {
+  max-height: 150px;
+  max-width: 150px;
   margin-bottom: 5px;
+}
+.display {
+    max-height: 800px;
+    max-width: 800px;
+    float: right;
 }
