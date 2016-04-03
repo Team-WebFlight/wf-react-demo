@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import WebFlight from '../../webflight/WebFlight.jsx'
+import WebFlight from './WebFlight.jsx'
 
 class Gallery extends Component {
   render() {
