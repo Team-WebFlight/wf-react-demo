@@ -1,19 +1,16 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
 import Gallery from './components/Gallery.jsx'
-import WebFlight from '../webflight/WebFlight.jsx'
+import WebFlight from './components/WebFlight.jsx'
 import path from 'path'
-
+import { sources } from './utils/img-src.js'
 class App extends Component {
   constructor() {
     super();
-    this.srcArray = [['imgs/blue-1.jpg','imgs/blue-2.jpg', 
-      'imgs/blue-3.jpg', 'imgs/blue-4.jpg'],
-      ['imgs/02.jpg', 'imgs/10.jpg', 'imgs/11.jpg', 'imgs/12.jpg'],
-      ['imgs/13.jpg', 'imgs/green-1.JPG','imgs/05.jpg', 'imgs/08.jpg']]
+    this.srcArray = sources
 
     this.state = {
-      current: this.srcArray[0],
+      current: this.srcArray,
       display: this.srcArray[2][0]
     }
 
