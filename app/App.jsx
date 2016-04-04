@@ -3,7 +3,9 @@ import ReactDOM from 'react-dom'
 import Gallery from './components/Gallery.jsx'
 import WebFlight from './components/WebFlight.jsx'
 import path from 'path'
-import { sources } from './utils/img-src.js'
+import { sources } from './utils/img-sources.js'
+import Infinite from 'react-infinite'
+
 class App extends Component {
   constructor() {
     super();
@@ -29,15 +31,11 @@ class App extends Component {
 
   }
   render () {
+    console.log('sources ', this.srcArray)
     return (
     <div>
-      <div>
-        <button id='reds' onClick={this.triggerRed}>Reds</button>
-        <button id='yellows' onClick={this.triggerYellow}>Yellows</button>
-      </div>
-      <WebFlight source={this.state.display} cls={"display"}/>
-      <Gallery source={this.state.current}
-               handle={this.updateDisplay} cls={"thumbnails"}/>
+      <Infinite containerHeight={200} 
+      elementHeight={600} imgSrc={this.srcArray} />
     </div>
     )
   }

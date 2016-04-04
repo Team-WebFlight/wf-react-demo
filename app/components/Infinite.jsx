@@ -1,11 +1,12 @@
-import React, { Component } from 'react';
+//import React, { Component } from 'react';
 import WebFlight from '../../webflight/WebFlight.jsx'
+import Infinite from 'react-infinite'
 
-class Gallery extends Component {
+
+class Infinite extends Component {
   render() {
-    let images = this.props.source.map((img, i) => 
-      <WebFlight source={img} key={i} cls={this.props.cls} 
-      handle={this.props.handle} />)
+    let images = this.props.imgSrc.map((img, i) => 
+      <WebFlight source={img} key={i} />)
     return (
       <div>
        { images }
@@ -14,4 +15,4 @@ class Gallery extends Component {
   }
 }
 
-export default Gallery;
+export default Infinite;
