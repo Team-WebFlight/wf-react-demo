@@ -1,16 +1,15 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
-import Photos from './components/Photos.jsx'
 import WebFlight from './components/WebFlight.jsx'
 import path from 'path'
 import { sources } from './utils/img-sources.js'
-import Gallery from 'react-photo-gallery'
+import Gallery from './components/Gallery.jsx'
 
 
 class App extends Component {
   constructor() {
     super();
-    this.srcArray = sources.slice(0, 4)
+    this.srcArray = sources
 
     this.state = {
       current: this.srcArray
@@ -31,10 +30,9 @@ class App extends Component {
 
   }
   render () {
-    console.log('sourc ', this.state.current)
     return (
     <div>
-      <Photos photos={this.state.current} />
+      <Gallery source={this.state.current} />
     </div>
     )
   }

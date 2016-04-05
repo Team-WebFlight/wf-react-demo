@@ -22,12 +22,10 @@ class WebFlight extends Component {
   }
 
   render () {
-   console.log('photo', this.props.photos) 
     return (
-    <div>
-      <img src={this.props.photos} className={this.props.cls} 
-        onClick={this.props.handle} />
-    </div>
+    <li>
+      <img src={this.props.source} key={this.props.key} />
+    </li>
     )
   }
 }

@@ -1,19 +1,24 @@
 import React, { Component } from 'react';
 import WebFlight from './WebFlight.jsx'
-import Gallery from 'react-photo-gallery'
+import Masonry from 'react-masonry-component'
 
-
-class Photos extends Component {
+class Gallery extends Component {
   render() {
-    let images = this.props.source.map((img, i) => 
-      <WebFlight source={img} key={i} cls={this.props.cls} 
-      handle={this.props.handle} />)
-    return (
-      <div>
-       { images }
-      </div>
+    let images = this.props.source.map((img, i) => {
+      return (
+          <WebFlight source={img} key={i} cls={this.props.cls} 
+          handle={this.props.handle} />
+        )
+    })
+    console.log('images ', images)
+   return (
+    <div>
+      <Masonry elementType={'ul'}>
+        { images }
+        </Masonry>
+    </div>
     );
   }
 }
 
-export default Photos;
+export default Gallery;
