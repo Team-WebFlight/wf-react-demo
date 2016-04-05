@@ -12,24 +12,12 @@ class App extends Component {
     this.srcArray = sources
 
     this.state = {
-      current: this.srcArray
+      total: 4,
+      current: this.srcArray.slice(0, 4)
     }
-
-    //this.triggerRed = function () {
-    // return this.setState({current: this.srcArray[1]})
-    //}.bind(this)
-
-    //this.triggerYellow = function () {
-    //  return this.setState({current: this.srcArray[2]})
-    //}.bind(this)
-
-    //this.updateDisplay = function (element) {
-    //  let clickedSrc = `imgs/${path.basename(element.target.src)}`
-    //  return this.setState({display: clickedSrc})
-    //}.bind(this)
-
   }
   render () {
+    console.log('total ', this.state.current)
     return (
     <div>
       <Gallery source={this.state.current} />
