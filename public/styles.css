@@ -1,16 +1,10 @@
-* {
-   /*border: 1px dotted red;*/
-}
-
 html, body {
   margin: 0;
   font-family: 'Open Sans', sans-serif;
-/*   font-weight: 300; */
   color: #282c37;
 }
 
 .navbar {
-  height: 80px;
   width: 100%;
   background: #d9e1e8;
 }
@@ -25,9 +19,10 @@ html, body {
 #title {
   color: #728BAC;
   font-weight: 300;
-  font-size: 30px;
+  font-size: 3em;
   margin-bottom: 15px;
-  margin-right: 20px;
+  margin-left: 20px;
+  padding: 12px;
 }
 
 .footer {
