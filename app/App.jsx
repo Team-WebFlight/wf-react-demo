@@ -12,15 +12,24 @@ class App extends Component {
     this.srcArray = sources
 
     this.state = {
-      total: 4,
-      current: this.srcArray.slice(0, 4)
+      bottom: 6,
+      current: this.srcArray.slice(0, 6)
     }
   }
+  
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll)
+  }
+
+  handleScroll(e) {
+    let srollTop = e.srcElement.body.scrollTop;
+    console.log('scroll top', srollTop)
+  }
+
   render () {
-    console.log('total ', this.state.current)
     return (
     <div>
-      <Gallery source={this.state.current} />
+      <Gallery source={this.state.current} scroll={this.handleScroll} />
     </div>
     )
   }
