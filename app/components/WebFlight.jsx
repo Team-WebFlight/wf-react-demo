@@ -10,7 +10,7 @@ class WebFlight extends Component {
       } else {
         this.wfSrc = src
       }
-    }
+    }.bind(this)
   }
 
   componentWillReceiveProps (nextProps) {
@@ -24,7 +24,7 @@ class WebFlight extends Component {
   render () {
     return (
       <li>
-        <img src={this.props.source} className={'display'}/>
+        <img src={this.wfSrc} className={'display'}/>
       </li>
     )
   }
