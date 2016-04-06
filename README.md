@@ -7,5 +7,5 @@ This is a demo of [WebFlight-React](http://www.github.com/Team-WebFlight/wf-reac
 functionality to single-page apps made with ReactJS.
 
 ### Acknowledgements
-Attribution for images used in this demo can be found [here](http://www.github.com/10000highfives/wf-react-demo/img-cc-attribs.txt)
-
+Attribution for images used in this demo can be found
+[here](https://github.com/Team-WebFlight/wf-react-demo/blob/master/img-cc-attribs.txt)
