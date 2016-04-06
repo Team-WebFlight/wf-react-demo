@@ -15,15 +15,22 @@ class App extends Component {
       bottom: 6,
       current: this.srcArray.slice(0, 6)
     }
+    this.handleScroll = this.handleScroll.bind(this)
   }
   
   componentDidMount() {
     window.addEventListener('scroll', this.handleScroll)
   }
-
+  
   handleScroll(e) {
-    let srollTop = e.srcElement.body.scrollTop;
-    console.log('scroll top', srollTop)
+    let scrollTop = e.srcElement.body.scrollTop;
+    let availHeight = window.screen.availHeight
+    if (availHeight - scrollTop <= 150) {
+      let currentSources = this.state.current
+      let currentLastSource = this.state.bottom
+      currentSources = currentSources.concat(this.srcArray.slice(currentLastSource, currentLastSource + 3))
+      this.setState({current: currentSources, bottom: currentLastSource + 3})
+    }
   }
 
   render () {
