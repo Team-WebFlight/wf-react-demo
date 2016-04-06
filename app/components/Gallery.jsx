@@ -10,7 +10,6 @@ class Gallery extends Component {
           handle={this.props.handle} />
         )
     })
-    console.log('images ', images)
    return (
     <div>
       <Masonry elementType={'ul'}>
