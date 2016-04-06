@@ -4,7 +4,7 @@
     <title>WebFlight React Test</title>
     <link rel='stylesheet' href='styles.css' type='text/css'>
   </head>
-  <body>
+  <body class='gradient'>
      <div class="navbar">
     <div id="title">WebFlight-React</div>
         <div class="nav-links">
@@ -19,7 +19,7 @@
      <script>
        var client = new WebTorrent();
        wfGlobal = {}
-       var magnetURI = 'magnet:?xt=urn:btih:3332e736b96d418ae7e0ef0d223164012790db6b&dn=02.jpg&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.webtorrent.io'
+       var magnetURI = 'magnet:?xt=urn:btih:18fffb4e0e37c149ec1d6efe30b975a99edb74db&dn=blue-1.jpg&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.webtorrent.io'
        client.add(magnetURI, function(torrent) {
 
          // show torrent download progress

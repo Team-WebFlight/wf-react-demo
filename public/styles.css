@@ -11,7 +11,7 @@ html, body {
 
 .nav-links {
   word-spacing: 20px;
-  margin-top: 25px;
+  margin-bottom: 25px;
   margin-right: 80px;
   float: right;
 }
@@ -51,4 +51,12 @@ img {
     max-width: 620px;
     height: auto;
     max-height: 320px;
+}
+.gradient {
+    background-image:
+      linear-gradient(
+        to bottom right,
+        rgb(170, 255, 210),rgb(255, 192, 73)
+        );
+}
 }
