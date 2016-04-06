@@ -10,7 +10,7 @@ class WebFlight extends Component {
       } else {
         this.wfSrc = src
       }
-    }
+    }.bind(this)
   }
 
   componentWillReceiveProps (nextProps) {
@@ -22,12 +22,10 @@ class WebFlight extends Component {
   }
 
   render () {
-    let newDisplay = this.props.source
     return (
-    <div>
-      <img src={this.props.source} className={this.props.cls} 
-        onClick={this.props.handle} />
-    </div>
+      <li>
+        <img src={this.wfSrc} className={'display'}/>
+      </li>
     )
   }
 }

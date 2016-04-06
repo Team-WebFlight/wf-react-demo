@@ -1,0 +1,22 @@
+'blue-2.jpg' : By Arjan Haverkamp - originally posted to Flickr as 2009-03-21-12h50m25.IMG_6531l, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=9182040
+'blue-1.jpg' : By The Lilac Breasted Roller from Sullivan's Island, United States - Green Honeycreeper (Chlorophanes spiza), CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=3466267
+'blue-3.jpg' : By I, Michael Kranewitter, CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=5782281
+'blue-4.jpg' : By I, Malene, CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=20612
+'yellow-1.jpg': By 4028mdk09 - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=10400307
+'yellow-2.jpg': By William Kreijkes - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=4539543
+'yellow-3.jpg': By Matt MacGillivray from Toronto, Canada - southern masked-weaver, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=5004486
+'yellow-4.jpg': By 4028mdk09 - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=10400346
+'yellow-6.jpg': By Charles J Sharp - Own work, from Sharp Photography, sharpphotography, CC BY 2.5, https://commons.wikimedia.org/w/index.php?curid=1323978
+'yellow-7.jpg': By Alias 0591 from the Netherlands - Angry bird, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=24302881
+'orange-1.jpg': By Darren Swim - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=2907366
+'orange-2.jpg': By Jerry Thompson - IMG_4262aa, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=5412101
+'orange-3.jpg':By Tony Hisgett from Birmingham, UK - Temmincks Tragopan 3Uploaded by Magnus Manske, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=21114946
+'white-1.jpg': By Rennett Stowe from USA - Bali Starling, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=26301596
+'white-2.jpg': By Tim Strater from Rotterdam, Nederland - Kleine Zilverreiger, CC BY-SA 2.0, https://commons.wikimedia.org/w/index.php?curid=28152945
+'white-3.jpg': By 4028mdk09 - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=13287650
+'white-4.jpg': By Berit from Redhill/Surrey, UK - With the little one, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=24489725
+'green-1.jpg': By Vikramdeep Sidhu from Jhar, India - Posers 3, CC BY 2.0, https://commons.wikimedia.org/w/index.php?curid=41480303
+'green-3.jpg': By Geolina163 - Own work, CC BY-SA 3.0, https://commons.wikimedia.org/w/index.php?curid=33845188
+'green-4.jpg': By Cjh1452000 - Own work, CC BY-SA 4.0, https://commons.wikimedia.org/w/index.php?curid=37006639
+
+

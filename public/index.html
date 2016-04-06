@@ -4,58 +4,31 @@
     <title>WebFlight React Test</title>
     <link rel='stylesheet' href='styles.css' type='text/css'>
   </head>
-  <body>
+  <body class='gradient'>
      <div class="navbar">
-    <div id="title">WebFlight<sup><span id='beta'> alpha</span></sup></div>
-    <div class="nav-links">
-      <a href="https://www.github.com/Team-WebFlight/WebFlight" target="_blank">GitHub</a>
-      <a href="https://github.com/Team-WebFlight/WebFlight/blob/master/README.md" target="_blank">Docs</a>
-      <a href="#">Performance</a>
-      <a href="#">Demo</a>
-    </div>
+         <div id="title">WebFlight-React</div>
+     </div>
      <div id="app"></div>
-    <!--<div class="footer">-->
-    <!--    <p class="footer-left">-->
-    <!--    <a href="#" id="feedback-link">Feedback</a>-->
-    <!--    <a href="https://github.com/Team-WebFlight/WebFlight/issues/new" target="_blank">Issues</a>-->
-    <!--    <p id="star-icon">-->
-    <!--        <script async defer id="github-bjs" src="https://buttons.github.io/buttons.js">-->
-    <!--        </script>-->
-    <!--        <a class="github-button" href="https://github.com/Team-WebFlight/webflight" data-style="mega" data-count-href="/Team-WebFlight/webflight/stargazers" data-count-api="/repos/Team-WebFlight/webflight#stargazers_count" data-count-aria-label="# stargazers on GitHub"-->
-    <!--        aria-label="Star Team-WebFlight/webflight on GitHub">Star</a>-->
-    <!--    </p>-->
-    <!--    </p>-->
-    <!--    <p class="footer-right">-->
-    <!--    Brought to you by Team WebFlight: <a href="https://github.com/CarolAG/" target="_blank">Carol</a>, <a href="https://github.com/coryc5/" target="_blank">Cory</a>, <a href="https://github.com/10000highfives/" target="_blank">Jared</a>, <a href="https://github.com/tbywong/"-->
-    <!--        target="_blank">Tiffany</a>-->
-    <!--    </p>-->
-
-    <!--</div>-->
      <script src="https://cdn.jsdelivr.net/webtorrent/latest/webtorrent.min.js"></script>
      <script>
        var client = new WebTorrent();
        wfGlobal = {}
-       var magnetURI = 'magnet:?xt=urn:btih:3332e736b96d418ae7e0ef0d223164012790db6b&dn=02.jpg&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=udp%3A%2F%2Ftracker.openbittorrent.com%3A80&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.fastcast.nz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.webtorrent.io'
+       var magnetURI = 'magnet:?xt=urn:btih:18fffb4e0e37c149ec1d6efe30b975a99edb74db&dn=blue-1.jpg&tr=udp%3A%2F%2Fexodus.desync.com%3A6969&tr=udp%3A%2F%2Ftracker.coppersurfer.tk%3A6969&tr=udp%3A%2F%2Ftracker.internetwarriors.net%3A1337&tr=udp%3A%2F%2Ftracker.leechers-paradise.org%3A6969&tr=wss%3A%2F%2Ftracker.btorrent.xyz&tr=wss%3A%2F%2Ftracker.openwebtorrent.com&tr=wss%3A%2F%2Ftracker.webtorrent.io'
        client.add(magnetURI, function(torrent) {
 
          // show torrent download progress
-         torrent.on('download', function(chunkSize){
-            console.log('chunk size: ' + chunkSize);
-            console.log('total downloaded: ' + torrent.downloaded);
-            console.log('download speed: ' + torrent.downloadSpeed);
+         torrent.on('download', function(chunkSize) {
             console.log('progress: ' + torrent.progress);
-            console.log('======');
           })
 
-         // add BlobURLs to global wfTorrent object
+         // add BlobURLs to wfGlobal object
          torrent.files.forEach(function(file) {
-           file.getBlobURL(function(err, url) {
-             wfGlobal[file.name] = url
-           })
+             file.getBlobURL(function(err, url) {
+                wfGlobal[file.name] = url
+             })
          })
        })
-       
-     </script>
-     <script src="bundle.js"></script>
+    </script>
+     <script src="./bundle.js"></script>
   </body>
 </html>

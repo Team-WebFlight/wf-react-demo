@@ -1,46 +1,44 @@
 import React, { Component } from 'react'
 import ReactDOM from 'react-dom'
+import WebFlight from './components/WebFlight.jsx'
+import { sources } from './utils/img-sources.js'
 import Gallery from './components/Gallery.jsx'
-import WebFlight from '../webflight/WebFlight.jsx'
-import path from 'path'
+
 
 class App extends Component {
   constructor() {
     super();
-    this.srcArray = [['imgs/blue-1.jpg','imgs/blue-2.jpg', 
-      'imgs/blue-3.jpg', 'imgs/blue-4.jpg'],
-      ['imgs/02.jpg', 'imgs/10.jpg', 'imgs/11.jpg', 'imgs/12.jpg'],
-      ['imgs/13.jpg', 'imgs/green-1.JPG','imgs/05.jpg', 'imgs/08.jpg']]
+    this.srcArray = sources
 
     this.state = {
-      current: this.srcArray[0],
-      display: this.srcArray[2][0]
+      bottom: 6,
+      current: this.srcArray.slice(0, 6)
     }
-
-    this.triggerRed = function () {
-     return this.setState({current: this.srcArray[1]})
-    }.bind(this)
-
-    this.triggerYellow = function () {
-      return this.setState({current: this.srcArray[2]})
-    }.bind(this)
-
-    this.updateDisplay = function (element) {
-      let clickedSrc = `imgs/${path.basename(element.target.src)}`
-      return this.setState({display: clickedSrc})
-    }.bind(this)
-
+    this.handleScroll = this.handleScroll.bind(this)
   }
+  
+  componentDidMount() {
+    window.addEventListener('scroll', this.handleScroll)
+    let bottom = this.state.bottom
+    this.setState({bottom: bottom + 3})
+  }
+  
+  handleScroll(e) {
+    let scrollTop = scrollTop || e.srcElement.body.scrollTop;
+    let availHeight = window.screen.availHeight
+    if (availHeight - scrollTop < 150) {
+      let currentSources = this.state.current
+      let currentLastSource = this.state.bottom
+      currentSources = currentSources.concat(this.srcArray.slice(currentLastSource, currentLastSource + 3))
+      scrollTop = 0
+      this.setState({current: currentSources, bottom: this.state.bottom + 3})
+    }
+  }
+
   render () {
     return (
     <div>
-      <div>
-        <button id='reds' onClick={this.triggerRed}>Reds</button>
-        <button id='yellows' onClick={this.triggerYellow}>Yellows</button>
-      </div>
-      <WebFlight source={this.state.display} cls={"display"}/>
-      <Gallery source={this.state.current}
-               handle={this.updateDisplay} cls={"thumbnails"}/>
+      <Gallery source={this.state.current} scroll={this.handleScroll} />
     </div>
     )
   }
